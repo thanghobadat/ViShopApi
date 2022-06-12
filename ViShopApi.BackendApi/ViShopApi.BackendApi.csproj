@@ -7,11 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\ViShopApi.Application\ViShopApi.Application.csproj" />
+    <ProjectReference Include="..\ViShopApi.Data\ViShopApi.Data.csproj" />
+    <ProjectReference Include="..\ViShopApi.ViewModel\ViShopApi.ViewModel.csproj" />
   </ItemGroup>
 
 </Project>
