@@ -3,7 +3,16 @@
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ViShopApi.Data\ViShopApi.Data.csproj" />
+    <ProjectReference Include="..\ViShopApi.ViewModel\ViShopApi.ViewModel.csproj" />
+  </ItemGroup>
 
 </Project>

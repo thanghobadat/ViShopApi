@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViShopApi.Data", "ViShopApi.Data\ViShopApi.Data.csproj", "{34BA7453-E9C1-4216-8FE8-9BBB4CB8D89E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViShopApi.Data", "ViShopApi.Data\ViShopApi.Data.csproj", "{34BA7453-E9C1-4216-8FE8-9BBB4CB8D89E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViShopApi.Application", "ViShopApi.Application\ViShopApi.Application.csproj", "{3EB0E9F7-9FCF-4F79-A0E7-D9A9D639035A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViShopApi.Application", "ViShopApi.Application\ViShopApi.Application.csproj", "{3EB0E9F7-9FCF-4F79-A0E7-D9A9D639035A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViShopApi.ViewModel", "ViShopApi.ViewModel\ViShopApi.ViewModel.csproj", "{7E32C93A-6499-42DA-AAE7-9BA492336A08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViShopApi.ViewModel", "ViShopApi.ViewModel\ViShopApi.ViewModel.csproj", "{7E32C93A-6499-42DA-AAE7-9BA492336A08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViShopApi.BackendApi", "ViShopApi.BackendApi\ViShopApi.BackendApi.csproj", "{734F87E1-9BC2-4983-A70E-9F74FEF7B268}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViShopApi.BackendApi", "ViShopApi.BackendApi\ViShopApi.BackendApi.csproj", "{734F87E1-9BC2-4983-A70E-9F74FEF7B268}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViShopApi.Client", "ViShopApi.Client\ViShopApi.Client.csproj", "{094C4F04-AF64-4818-B648-BDF066F814AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{734F87E1-9BC2-4983-A70E-9F74FEF7B268}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{734F87E1-9BC2-4983-A70E-9F74FEF7B268}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{734F87E1-9BC2-4983-A70E-9F74FEF7B268}.Release|Any CPU.Build.0 = Release|Any CPU
+		{094C4F04-AF64-4818-B648-BDF066F814AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{094C4F04-AF64-4818-B648-BDF066F814AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{094C4F04-AF64-4818-B648-BDF066F814AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{094C4F04-AF64-4818-B648-BDF066F814AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
