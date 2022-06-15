@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Category\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\ViShopApi.Data\ViShopApi.Data.csproj" />
   </ItemGroup>
 

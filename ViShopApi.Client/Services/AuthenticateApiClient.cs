@@ -17,14 +17,14 @@ namespace ViShopApi.Client.Services
             _configuration = configuration;
             _httpContextAccessor = httpContextAccessor;
         }
-        
+
         public async Task<ApiResult<string>> Login(LoginRequest request)
         {
             var json = JsonConvert.SerializeObject(request);
             var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
 
             var client = _httpClientFactory.CreateClient();
-            client.BaseAddress = new Uri("https://localhost:5001");
+            client.BaseAddress = new Uri(_configuration["BaseAddress"]);
             var response = await client.PostAsync("/api/authenticates/login", httpContent);
             var token = await response.Content.ReadAsStringAsync();
             return JsonConvert.DeserializeObject<ApiResult<string>>(token);
@@ -41,8 +41,6 @@ namespace ViShopApi.Client.Services
         //    var response = await client.PostAsync($"/api/authenticates/register", httpContent);
         //    var result = await response.Content.ReadAsStringAsync();
         //    return JsonConvert.DeserializeObject<ApiResult<bool>>(result);
-
-
         //}
     }
 }

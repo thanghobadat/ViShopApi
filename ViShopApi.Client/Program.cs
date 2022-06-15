@@ -19,7 +19,8 @@ builder.Services.AddSession(options =>
     options.IdleTimeout = TimeSpan.FromMinutes(30);
 });
 
-builder.Services.AddScoped<IAuthenticateApiClient, AuthenticateApiClient>();
+builder.Services.AddTransient<IAuthenticateApiClient, AuthenticateApiClient>();
+builder.Services.AddTransient<ICategoryApiClient, CategoryApiClient>();
 
 var mvcBuilder = builder.Services.AddRazorPages();
 
